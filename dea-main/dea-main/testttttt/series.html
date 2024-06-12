@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/series.css">
+    <!-- PIXI.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/browser/pixi.min.js"></script>
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRJ3mK5I4glfQbD5nrhjtvuDA5x6A9ed6GfduB+He" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- NAV -->
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="#" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>Pixel<span class="main-color">Pre</span>miere
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><span>G</span><span>e</span><span>n</span><span>r</span><span>e</span></a>
+                    <div class="dropdown-content">
+                        <a href="movies.html?genre=action">Action</a>
+                        <a href="movies.html?genre=comedy">Comedy</a>
+                        <a href="movies.html?genre=drama">Drama</a>
+                        <a href="movies.html?genre=horror">Horror</a>
+                        <a href="movies.html?genre=romance">Romance</a>
+                        <a href="movies.html?genre=sci-fi">Sci-Fi</a>
+                        <a href="movies.html?genre=thriller">Thriller</a>
+                        <a href="movies.html?genre=documentary">Documentary</a>
+                    </div>
+                </li>
+                <li><a href="movies.html"><span>M</span><span>o</span><span>v</span><span>i</span><span>e</span><span>s</span></a></li>
+                <li><a href="#"><span>S</span><span>e</span><span>r</span><span>i</span><span>e</span><span>s</span></a></li>
+                <li><a href="about.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+                <li><a href="#" class="btn btn-hover"><span>S</span><span>i</span><span>g</span><span>n</span> <span>i</span><span>n</span></a></li>
+            </ul>
+            <!-- MOBILE MENU TOGGLE -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END NAV -->
+
+<!-- banner section -->
+<div class="bg-img">
+  <div class="banner-container">
+    <div id="pixi-container" class="video-container"></div>
+    <div class="banner-text">
+      <h1 id="movie-text">Scarface</h1>
+      <p id="movie-pretext">Exclusive Trailer HD</p>
+      <p id="movie-year">
+        2016 <span> <i class="fas fa-star"></i> 7.6</span>
+      </p>
+    </div>
+    <div class="play-logo" id="play-logo" style="color: #c0392b;"><i class="far fa-play-circle"></i></div>
+
+  </div>
+</div>
+
+<!-- movie card sections -->
+<div class="movie-card-row">
+    <div class="movie-nav-link">
+      <nav>
+        <ul>
+          <li><a href="" style="font-size: 30px">Trending</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>
+            <select name="" id="">
+              <option value="">
+                <a href="" style="font-size: 30px">Top Rated</a>
+              </option>
+              <option value="">
+                <a href="" style="font-size: 30px">Popular</a>
+              </option>
+              <option value="">
+                <a href="index.html" style="font-size: 30px">Upcoming</a>
+              </option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+  </div>
+    <div class="movie-img-container" id="movie-link">
+      <!-- JAVASCRIPT CONTENT FROM TMDB API -->
+    </div>
+</div>
+<footer>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/series.js" type="module"></script>
+   
+     <!-- PIXI-JS -->
+    <script>
+const app = new PIXI.Application({
+  width: window.innerWidth,
+  height: window.innerHeight,
+  transparent: true
+});
+document.getElementById('pixi-container').appendChild(app.view);
+
+// Load the video
+const videoTexture = PIXI.Texture.from('assets/traileri.mp4');
+const videoSprite = new PIXI.Sprite(videoTexture);
+
+videoSprite.width = window.innerWidth;
+videoSprite.height = window.innerHeight;
+videoSprite.anchor.set(0.5);
+videoSprite.position.set(app.screen.width / 2, app.screen.height / 2);
+
+app.stage.addChild(videoSprite);
+
+// Play video after user interaction
+const playLogo = document.getElementById('play-logo');
+playLogo.addEventListener('click', () => {
+  const video = videoTexture.baseTexture.resource.source;
+
+  if (video.paused) {
+    video.play();
+    playLogo.innerHTML = '<i class="far fa-pause-circle"></i>';
+  } else {
+    video.pause();
+    playLogo.innerHTML = '<i class="far fa-play-circle"></i>';
+  }
+});
+
+// Update the size when the window resizes
+window.addEventListener('resize', () => {
+  app.renderer.resize(window.innerWidth, window.innerHeight);
+  videoSprite.width = window.innerWidth;
+  videoSprite.height = window.innerHeight;
+  videoSprite.position.set(app.screen.width / 2, app.screen.height / 2);
+});
+</script>
+</footer>
+</body>
+</html>

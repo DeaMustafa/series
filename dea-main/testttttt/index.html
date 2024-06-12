@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tewst</title>
+     <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+       rel="stylesheet" href="path/to/owl.carousel.min.css"
+    />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- APP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="nav">
+          <a href="#" class="logo">
+            <i class="bx bx-movie-play bx-tada main-color"></i>Pixel<span
+              class="main-color"
+              >Pre</span
+            >miere
+          </a>
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="#"
+                ><span>H</span><span>o</span><span>m</span><span>e</span></a
+              >
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"
+                ><span>G</span><span>e</span><span>n</span><span>r</span
+                ><span>e</span></a
+              >
+              <div class="dropdown-content">
+                <a href="movies.html?genre=action">Action</a>
+                <a href="movies.html?genre=comedy">Comedy</a>
+                <a href="movies.html?genre=drama">Drama</a>
+                <a href="movies.html?genre=horror">Horror</a>
+                <a href="movies.html?genre=romance">Romance</a>
+                <a href="movies.html?genre=sci-fi">Sci-Fi</a>
+                <a href="movies.html?genre=thriller">Thriller</a>
+                <a href="movies.html?genre=documentary">Documentary</a>
+              </div>
+            </li>
+            <li>
+              <a href="movies.html"
+                ><span>M</span><span>o</span><span>v</span><span>i</span
+                ><span>e</span><span>s</span></a
+              >
+            </li>
+            <li>
+              <a href="series.html"
+                ><span>S</span><span>e</span><span>r</span><span>i</span
+                ><span>e</span><span>s</span></a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><span>A</span><span>b</span><span>o</span><span>u</span
+                ><span>t</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn btn-hover"
+                ><span>S</span><span>i</span><span>g</span><span>n</span>
+                <span>i</span><span>n</span></a
+              >
+            </li>
+          </ul>
+          <!-- MOBILE MENU TOGGLE -->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- Hero Section with Video Background START -->
+    <div class="hero-section">
+      <video autoplay muted loop id="hero-video">
+        <source src="assets/HeroMovie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <a href="genre.html" class="btn btn-primary">Explore Now</a>
+      </div>
+    </div>
+    <!-- Hero Section with Video Background END -->
+
+    <div class="custom-cursor"></div>
+
+
+     <!--NOW PLAYING MOVIES START--> 
+     <section class="featured-section">
+        <h2>Now Playing Movies</h2>
+        <div class="featured-carousel owl-carousel">
+            <div class="featured-item">
+                <img src="images/image 1.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 2.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 3.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 4.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 5.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 6.png" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 7.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 8.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 9.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 10.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 11.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>       
+            <!-- Add more featured items as needed -->
+        </div>
+    </section>
+   <!--NOW PLAYING MOVIES END--> 
+    
+     <!--TRENDING MOVIES START--> 
+     <section class="featured-section">
+        <h2>Trending Movies</h2>
+        <div class="featured-carousel owl-carousel">
+            <div class="featured-item">
+                <img src="images/image 1.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 2.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 3.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 4.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 5.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 6.png" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 7.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 8.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 9.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 10.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 11.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="#" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>       
+            <!-- Add more featured items as needed -->
+        </div>
+    </section>
+   <!--TRENDING MOVIES END--> 
+
+    <!--TOP RATED MOVIES Section START--> 
+    <section class="featured-section">
+        <h2>Top Rated Movies</h2>
+        <div class="featured-carousel owl-carousel">
+            <div class="featured-item">
+                <img src="images/image 1.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 2.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 3.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 4.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 5.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 6.png" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 7.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 8.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 9.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 10.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="images/image 11.jpg" alt="Movie 1">
+                <div class="overlay">
+                    <h3>Movie Title 1</h3>
+                    <p>Description of the movie</p>
+                    <a href="movies.html" class="btn btn-primary">Watch Now</a>
+                </div>
+            </div>       
+            <!-- Add more featured items as needed -->
+        </div>
+    </section>
+   <!--TOP RATIED MOVIES Section END--> 
+
+
+
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--script.js -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
